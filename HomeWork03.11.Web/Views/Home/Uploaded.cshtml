@@ -1,0 +1,17 @@
+﻿@model ImagesViewModel
+
+<div class="row">
+    <div class="col-md-8 offset-md-2 bg-light p-4 rounded shadow">
+        <h3>
+            Thank you for uploading your images,
+            here's the link to share with your friends:
+            <br /><br />
+            <a href="localhost:5144/home/image?id=@Model.Image.Id">
+                https://localhost:5144/home/image?id=@Model.Image.Id
+            </a>
+            <br /><br />
+
+            Make sure to give them the password of "@Model.Image.Password"
+        </h3>
+    </div>
+</div>
